@@ -1,6 +1,6 @@
 // Scoreboard & Timer
 $(document).ready(function() {
-    var timerSeconds = 30;
+    var timerValue = 10;
     var correctAnswers = 0;
     var incorrectAnswers = 0;
     var noAnswer = 0;
@@ -9,27 +9,27 @@ $(document).ready(function() {
         $("#start-screen").hide();
         $("#game-screen").show();
 
-        var interval = setInterval(timer, 240);
+        var interval = setInterval(timer, 1000);
 
         function timer() {
-            timerSeconds--;
-            $("#timer").text("Time remaining: $[timerSeconds]");
+            timerValue--;
+            $("#timer").text(`Time remaining: ${timerValue}`);
 
-            if(timerSeconds === 0) {
+            if(timerValue === 0) {
                 clearInterval(interval);
                 $("#game-screen").hide();
                 $("#game-over").show();
                 isCorrect();
             }
-        $("#correct").text("Correct: $[correctAnswers]");
-        $("#incorrect").text("Inorrect: $[correctAnswers] Bummer!");
-        $("#noAnswer").text("Not Answered: $[noAnswer]");
+        $("#correct").text(`Correct: ${correctAnswers}`);
+        $("#incorrect").text(`Incorrect: ${incorrectAnswers} Bummer!`);
+        $("#noAnswer").text(`Not Answered: ${noAnswer}`);
             }
     });
 
     function isCorrect() {
         for (var i = 1; i < 8; i++) {
-            var buttonValue = $("input[name=a${i}]:checked").value();
+            var buttonValue = $(`input[name=a${i}]:checked`).val();
             if (buttonValue === "true") {
                 console.log(true);
                 correctAnswers++;
