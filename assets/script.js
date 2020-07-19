@@ -3,7 +3,7 @@ $(document).ready(function() {
     var timerValue = 10;
     var correctAnswers = 0;
     var incorrectAnswers = 0;
-    var noAnswer = 0;
+    var unanswered = 0;
 // Start button
     $("#start-button").click(function() {
         $("#start-screen").hide();
@@ -19,15 +19,15 @@ $(document).ready(function() {
                 clearInterval(interval);
                 $("#game-screen").hide();
                 $("#game-over").show();
-                isCorrect();
+                isRight();
             }
         $("#correct").text(`Correct: ${correctAnswers}`);
         $("#incorrect").text(`Incorrect: ${incorrectAnswers} Bummer!`);
-        $("#noAnswer").text(`Not Answered: ${noAnswer}`);
+        $("#noAnswer").text(`Not Answered: ${unanswered}`);
             }
     });
 
-    function isCorrect() {
+    function isRight() {
         for (var i = 1; i < 8; i++) {
             var buttonValue = $(`input[name=a${i}]:checked`).val();
             if (buttonValue === "true") {
@@ -37,8 +37,8 @@ $(document).ready(function() {
                 console.log(false);
                 incorrectAnswers++;
             } else {
-                console.log("not answered");
-                noAnswer++;
+                console.log("unanswered");
+                unanswered++;
             }
         }
     }

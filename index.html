@@ -6,7 +6,7 @@
     <title>Classic Rock Trivia!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="assets/style.css">-->
+    <link rel="stylesheet" href="assets/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
 </head>
@@ -27,7 +27,7 @@
     </div>
     <!--Timer, First Question and Answer-->
         <div id="game-screen" style="display: none">
-            <div class="row">
+            <div class="row"> 
                 <div class="col-md-3"></div>
                 <div class="col-md-6 text-center" id="timer"></div>
                 <div class="col-md-3"></div>
@@ -42,10 +42,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-one" value = "false"> Bold as Love <br>
-                    <input type="checkbox" name="answer-one" value = "false"> Disraeli Gears <br>
-                    <input type="checkbox" name="answer-one" value = "true"> Are You Experienced <br>
-                    <input type="checkbox" name="answer-one" value = "false"> Who's Next <br> <br> 
+                    <input type="radio" name="answer-one" value = "false"> Bold as Love <br>
+                    <input type="radio" name="answer-one" value = "false"> Disraeli Gears <br>
+                    <input type="radio" name="answer-one" value = "true"> Are You Experienced <br>
+                    <input type="radio" name="answer-one" value = "false"> Who's Next <br> <br> 
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -60,10 +60,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-two" value = "false"> Kansas <br>
-                    <input type="checkbox" name="answer-two" value = "false"> AC/DC <br>
-                    <input type="checkbox" name="answer-two" value = "false"> Pink Floyd <br>
-                    <input type="checkbox" name="answer-two" value = "true"> Boston <br> <br> 
+                    <input type="radio" name="answer-two" value = "false"> Kansas <br>
+                    <input type="radio" name="answer-two" value = "false"> AC/DC <br>
+                    <input type="radio" name="answer-two" value = "false"> Pink Floyd <br>
+                    <input type="radio" name="answer-two" value = "true"> Boston <br> <br> 
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -78,10 +78,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-three" value = "false"> Diaper David <br>
-                    <input type="checkbox" name="answer-three" value = "true"> Diamond Dave <br>
-                    <input type="checkbox" name="answer-three" value = "false"> Rusty Roth <br>
-                    <input type="checkbox" name="answer-three" value = "false"> Dynamite Dave <br> <br>
+                    <input type="radio" name="answer-three" value = "false"> Diaper David <br>
+                    <input type="radio" name="answer-three" value = "true"> Diamond Dave <br>
+                    <input type="radio" name="answer-three" value = "false"> Rusty Roth <br>
+                    <input type="radio" name="answer-three" value = "false"> Dynamite Dave <br> <br>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -96,10 +96,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-four" value = "false"> Rush <br>
-                    <input type="checkbox" name="answer-four" value = "true"> AC/DC <br>
-                    <input type="checkbox" name="answer-four" value = "false"> Led Zeppelin<br>
-                    <input type="checkbox" name="answer-four" value = "false"> The Rolling Stones <br> <br>
+                    <input type="radio" name="answer-four" value = "false"> Rush <br>
+                    <input type="radio" name="answer-four" value = "true"> AC/DC <br>
+                    <input type="radio" name="answer-four" value = "false"> Led Zeppelin<br>
+                    <input type="radio" name="answer-four" value = "false"> The Rolling Stones <br> <br>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -114,10 +114,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-five" value = "true"> Rush <br>
-                    <input type="checkbox" name="answer-five" value = "false"> AC/DC <br>
-                    <input type="checkbox" name="answer-five" value = "false"> Led Zeppelin<br>
-                    <input type="checkbox" name="answer-five" value = "false"> The Rolling Stones <br> <br>
+                    <input type="radio" name="answer-five" value = "true"> Rush <br>
+                    <input type="radio" name="answer-five" value = "false"> AC/DC <br>
+                    <input type="radio" name="answer-five" value = "false"> Led Zeppelin<br>
+                    <input type="radio" name="answer-five" value = "false"> The Rolling Stones <br> <br>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -132,10 +132,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-six" value = "false"> Def Leppard <br>
-                    <input type="checkbox" name="answer-six" value = "false"> Lynyrd Skynyrd <br>
-                    <input type="checkbox" name="answer-six" value = "true"> Rush <br>
-                    <input type="checkbox" name="answer-six" value = "false"> Queen <br> <br>
+                    <input type="radio" name="answer-six" value = "false"> Def Leppard <br>
+                    <input type="radio" name="answer-six" value = "false"> Lynyrd Skynyrd <br>
+                    <input type="radio" name="answer-six" value = "true"> Rush <br>
+                    <input type="radio" name="answer-six" value = "false"> Queen <br> <br>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -150,10 +150,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-seven" value = "false"> Grateful Dead  <br>
-                    <input type="checkbox" name="answer-seven" value = "false"> The Beatles <br>
-                    <input type="checkbox" name="answer-seven" value = "false"> The Doors <br>
-                    <input type="checkbox" name="answer-seven" value = "true"> Led Zeppelin <br> <br>
+                    <input type="radio" name="answer-seven" value = "false"> Grateful Dead  <br>
+                    <input type="radio" name="answer-seven" value = "false"> The Beatles <br>
+                    <input type="radio" name="answer-seven" value = "false"> The Doors <br>
+                    <input type="radio" name="answer-seven" value = "true"> Led Zeppelin <br> <br>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -168,10 +168,10 @@
             <div class="answer row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
-                    <input type="checkbox" name="answer-eight" value = "false"> Pink Floyd <br>
-                    <input type="checkbox" name="answer-eight" value = "false"> Aerosmith <br>
-                    <input type="checkbox" name="answer-eight" value = "true"> ZZ Top <br>
-                    <input type="checkbox" name="answer-eight" value = "false"> The Eagles <br> <br>
+                    <input type="radio" name="answer-eight" value = "false"> Pink Floyd <br>
+                    <input type="radio" name="answer-eight" value = "false"> Aerosmith <br>
+                    <input type="radio" name="answer-eight" value = "true"> ZZ Top <br>
+                    <input type="radio" name="answer-eight" value = "false"> The Eagles <br> <br>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -183,7 +183,7 @@
                 <div class="col-md-6 text-center" id="game-over-screen">
                 <p id="correct"> </p>
                 <p id="incorrect"> </p>
-                <p id="no-answer"> </p>
+                <p id="unanswered"> </p>
                 </div>
                 <div class="col-md-3"></div>
             </div>
