@@ -79,6 +79,19 @@ const myQuestions = [
 (function(){
     
     function buildQuiz(){
+              //Timer starts when page loads
+              var timer = 60;
+              var timerID;
+
+              timerID = setInterval(countdown, 1000);
+              function countdown(){
+                timer--;
+                document.getElementById("countdown").innerHTML = timer + " seconds left!";
+                if (timer === 0) {
+                  clearInterval(timerID);
+                  alert("Crap! You ran out of time! Refresh to try again.")
+                }
+              }
       // variable to store the HTML output
       const output = [];
   
