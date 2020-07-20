@@ -1,6 +1,7 @@
 body {
     background-image: url("logos.gif");
     color: yellow;
+    font-size: 25px;
     font-family: 'Audiowide', cursive;
     text-align: center;
 }
@@ -43,11 +44,11 @@ button {
     margin-bottom: 10px;
 }
 
-button:hover{
+button:hover {
     background-color: orange;
 }
 
-.slide{
+.slide { 
     position: absolute;
     left: 0px;
     top: 0px;
@@ -56,13 +57,14 @@ button:hover{
     opacity: 0;
     transition: opacity 0.5s;
 }
-.active-slide{
+.active-slide {
     opacity: 1;
     z-index: 2;
 }
-.quiz-container{
+.quiz-container {
     position: relative;
     height: 300px;
     margin-top: 40px;
 }
+
   
