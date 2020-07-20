@@ -7,188 +7,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </head>
 <body>
-    <!--Page Header-->
+    <!--Header-->
     <div class="header">
         <h1 id="heading" class="text-center">Who Wants to be a Classic Rock Master?!</h1>
     </div>
-    <div class="container-fluid">
-        <div id="start-screen">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <button id="start-button">Let's Play!</button>
-                </div>
-                <div class="col-md-2"></div>
-        </div>
-    </div>
-    <!--Timer, First Question and Answer-->
-        <div id="game-screen" style="display: none">
-            <div class="row"> 
-                <div class="col-md-3"></div>
-                <div class="col-md-6 text-center" id="timer"></div>
-                <div class="col-md-3"></div>
-            </div>
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-one"> What is the title of the first album released by Jimi Hendrix? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-one" value = "false"> Bold as Love <br>
-                    <input type="radio" name="answer-one" value = "false"> Disraeli Gears <br>
-                    <input type="radio" name="answer-one" value = "true"> Are You Experienced <br>
-                    <input type="radio" name="answer-one" value = "false"> Who's Next <br> <br> 
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    <!--Second Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-two"> Who is the song, "More Than a Feeling," by? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-two" value = "false"> Kansas <br>
-                    <input type="radio" name="answer-two" value = "false"> AC/DC <br>
-                    <input type="radio" name="answer-two" value = "false"> Pink Floyd <br>
-                    <input type="radio" name="answer-two" value = "true"> Boston <br> <br> 
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-     <!--Third Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-three"> What is Van Halen singer, David Lee Roth's, nickname? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-three" value = "false"> Diaper David <br>
-                    <input type="radio" name="answer-three" value = "true"> Diamond Dave <br>
-                    <input type="radio" name="answer-three" value = "false"> Rusty Roth <br>
-                    <input type="radio" name="answer-three" value = "false"> Dynamite Dave <br> <br>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    <!--Fourth Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-four"> What band did Angus Young play guitar for? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-four" value = "false"> Rush <br>
-                    <input type="radio" name="answer-four" value = "true"> AC/DC <br>
-                    <input type="radio" name="answer-four" value = "false"> Led Zeppelin<br>
-                    <input type="radio" name="answer-four" value = "false"> The Rolling Stones <br> <br>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    <!--Fifth Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-five"> Which band did Angus Young play guitar for? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-five" value = "true"> Rush <br>
-                    <input type="radio" name="answer-five" value = "false"> AC/DC <br>
-                    <input type="radio" name="answer-five" value = "false"> Led Zeppelin<br>
-                    <input type="radio" name="answer-five" value = "false"> The Rolling Stones <br> <br>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    <!--Sixth Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-six"> Which band had the legendary drummer, Neil Peart? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-six" value = "false"> Def Leppard <br>
-                    <input type="radio" name="answer-six" value = "false"> Lynyrd Skynyrd <br>
-                    <input type="radio" name="answer-six" value = "true"> Rush <br>
-                    <input type="radio" name="answer-six" value = "false"> Queen <br> <br>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    <!--Seventh Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-seven"> Which band named their first few albums "I, II, III, and IV?" </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-seven" value = "false"> Grateful Dead  <br>
-                    <input type="radio" name="answer-seven" value = "false"> The Beatles <br>
-                    <input type="radio" name="answer-seven" value = "false"> The Doors <br>
-                    <input type="radio" name="answer-seven" value = "true"> Led Zeppelin <br> <br>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-    <!--Eighth Question and Answer-->
-            <div class="question row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <p id="question-eight"> Which band is known for their long beards and dressing sharp in tuxedos? </p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <div class="answer row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <input type="radio" name="answer-eight" value = "false"> Pink Floyd <br>
-                    <input type="radio" name="answer-eight" value = "false"> Aerosmith <br>
-                    <input type="radio" name="answer-eight" value = "true"> ZZ Top <br>
-                    <input type="radio" name="answer-eight" value = "false"> The Eagles <br> <br>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-        </div>
-    <!--End of Game-->
-        <div id="game-over" style="display: none">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 text-center" id="game-over-screen">
-                <p id="correct"> </p>
-                <p id="incorrect"> </p>
-                <p id="unanswered"> </p>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="assets/script.js"></script>
+   <!--Actual Quiz content starts via JavaScript--> 
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
+<script type="text/javascript" src="assets/script.js"></script>
 </body>
 </html>

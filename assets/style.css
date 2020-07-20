@@ -1,8 +1,8 @@
 body {
     background-image: url("logos.gif");
-    background-color: goldenrod;
     color: yellow;
     font-family: 'Audiowide', cursive;
+    text-align: center;
 }
 
 h1 {
@@ -12,4 +12,57 @@ h1 {
     font-family: 'Monoton', cursive;
     margin: 20px;
     padding: 40px;
+    letter-spacing: 0.2em;
 }
+.question {
+    font-size: 30px;
+    margin-bottom:10px;
+}
+
+.answers { 
+    font-size: 25px;
+    color: goldenrod;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+}
+.quiz-container{
+    position: relative;
+    height: 300px;
+    margin-top: 40px;
+}
+  
