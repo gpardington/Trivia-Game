@@ -1,10 +1,88 @@
+// Variables
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+const myQuestions = [
+  {
+    question: "What is the title of the first album released by Jimi Hendrix?",
+    answers: {
+      a: "Bold as Love",
+      b: "Disraeli Gears",
+      c: "Are You Experienced",
+      d: "Who's Next"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Who is the song, 'More Than a Feeling,' by?",
+    answers: {
+      a: "Kansas",
+      b: "AC/DC",
+      c: "Pink Floyd",
+      d: "Boston"
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "What is Van Halen singer, David Lee Roth's, nickname?",
+    answers: {
+      a: "Diaper David",
+      b: "Diamond Dave",
+      c: "Rusty Roth",
+      d: "Dynamite Dave"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What band did Angus Young play guitar for?",
+    answers: {
+      a: "Rush",
+      b: "AC/DC",
+      c: "Led Zeppelin",
+      d: "The Rolling Stones"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Which band had the legendary drummer, Neil Peart?",
+    answers: {
+      a: "Def Leppard",
+      b: "Lynyrd Skynyrd",
+      c: "Rush",
+      d: "Queen"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Which band named their first few albums 'I, II, III, and IV?''",
+    answers: {
+      a: "Grateful Dead",
+      b: "The Beatles",
+      c: "The Doors",
+      d: "Led Zeppelin"
+    },
+    correctAnswer: "d"
+  },
+  {
+  question: "Which band is known for their long beards and dressing sharp in tuxedos?",
+    answers: {
+      a: "Pink Floyd",
+      b: "Aerosmith",
+      c: "ZZ Top",
+      d: "The Eagles"
+    },
+    correctAnswer: "c"
+}
+];
+
+// Functions
 (function(){
-    // Functions
+    
     function buildQuiz(){
       // variable to store the HTML output
       const output = [];
   
-      // for each question...
+      // for each loop for questions
       myQuestions.forEach(
         (currentQuestion, questionNumber) => {
   
@@ -93,84 +171,9 @@
       showSlide(currentSlide - 1);
     }
   
-    // Variables
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
-    const myQuestions = [
-      {
-        question: "What is the title of the first album released by Jimi Hendrix?",
-        answers: {
-          a: "Bold as Love",
-          b: "Disraeli Gears",
-          c: "Are You Experienced",
-          d: "Who's Next"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Who is the song, 'More Than a Feeling,' by?",
-        answers: {
-          a: "Kansas",
-          b: "AC/DC",
-          c: "Pink Floyd",
-          d: "Boston"
-        },
-        correctAnswer: "d"
-      },
-      {
-        question: "What is Van Halen singer, David Lee Roth's, nickname?",
-        answers: {
-          a: "Diaper David",
-          b: "Diamond Dave",
-          c: "Rusty Roth",
-          d: "Dynamite Dave"
-        },
-        correctAnswer: "b"
-      },
-      {
-        question: "What band did Angus Young play guitar for?",
-        answers: {
-          a: "Rush",
-          b: "AC/DC",
-          c: "Led Zeppelin",
-          d: "The Rolling Stones"
-        },
-        correctAnswer: "b"
-      },
-      {
-        question: "Which band had the legendary drummer, Neil Peart?",
-        answers: {
-          a: "Def Leppard",
-          b: "Lynyrd Skynyrd",
-          c: "Rush",
-          d: "Queen"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Which band named their first few albums 'I, II, III, and IV?''",
-        answers: {
-          a: "Grateful Dead",
-          b: "The Beatles",
-          c: "The Doors",
-          d: "Led Zeppelin"
-        },
-        correctAnswer: "d"
-      },
-      {
-      question: "Which band is known for their long beards and dressing sharp in tuxedos?",
-        answers: {
-          a: "Pink Floyd",
-          b: "Aerosmith",
-          c: "ZZ Top",
-          d: "The Eagles"
-        },
-        correctAnswer: "c"
-    }
-];
+    
   
-    // Kick things off
+    // Start Quiz
     buildQuiz();
   
     // Pagination
