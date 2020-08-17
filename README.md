@@ -4,5 +4,4 @@ A multiple choice trivia game that uses BootStrap and JavaScript. Once the page 
 See if you know your Classic Rock trivia:
 https://gpardington.github.io/Trivia-Game/
 
-Screenshot:
-![Screenshot](assets/screen-shot.png?raw=true "Screenshot")
+![Screenshot](assets/Screen-Shot.png?raw=true "Screenshot")
