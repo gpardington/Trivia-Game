@@ -5,4 +5,4 @@ See if you know your Classic Rock trivia:
 https://gpardington.github.io/Trivia-Game/
 
 Screenshot:
-![](assets/screen-shot.png?raw=true "Screenshot")
+![Screenshot](assets/screen-shot.png?raw=true "Screenshot")
